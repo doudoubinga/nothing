@@ -1,12 +1,12 @@
 mixed-port: 7890
 
 ipv6: false
-# ÔÊÐí¾ÖÓòÍøµÄÁ¬½Ó£¨¿ÉÓÃÀ´¹²Ïí´úÀí£©
+# å…è®¸å±€åŸŸç½‘çš„è¿žæŽ¥ï¼ˆå¯ç”¨æ¥å…±äº«ä»£ç†ï¼‰
 allow-lan: false
-# ¹æÔòÄ£Ê½£ºRule£¨¹æÔò£© / Global£¨È«¾Ö´úÀí£©/ Direct£¨È«¾ÖÖ±Á¬£© 
+# è§„åˆ™æ¨¡å¼ï¼šRuleï¼ˆè§„åˆ™ï¼‰ / Globalï¼ˆå…¨å±€ä»£ç†ï¼‰/ Directï¼ˆå…¨å±€ç›´è¿žï¼‰ 
 mode: Rule
-# ÉèÖÃÈÕÖ¾Êä³ö¼¶±ð (Ä¬ÈÏ¼¶±ð£ºsilent£¬¼´²»Êä³öÈÎºÎÄÚÈÝ£¬ÒÔ±ÜÃâÒòÈÕÖ¾ÄÚÈÝ¹ý´ó¶øµ¼ÖÂ³ÌÐòÄÚ´æÒç³ö£©¡£
-# 5 ¸ö¼¶±ð£ºsilent / info / warning / error / debug¡£¼¶±ðÔ½¸ßÈÕÖ¾Êä³öÁ¿Ô½´ó£¬Ô½ÇãÏòÓÚµ÷ÊÔ£¬ÈôÐèÒªÇë×ÔÐÐ¿ªÆô¡£
+# è®¾ç½®æ—¥å¿—è¾“å‡ºçº§åˆ« (é»˜è®¤çº§åˆ«ï¼šsilentï¼Œå³ä¸è¾“å‡ºä»»ä½•å†…å®¹ï¼Œä»¥é¿å…å› æ—¥å¿—å†…å®¹è¿‡å¤§è€Œå¯¼è‡´ç¨‹åºå†…å­˜æº¢å‡ºï¼‰ã€‚
+# 5 ä¸ªçº§åˆ«ï¼šsilent / info / warning / error / debugã€‚çº§åˆ«è¶Šé«˜æ—¥å¿—è¾“å‡ºé‡è¶Šå¤§ï¼Œè¶Šå€¾å‘äºŽè°ƒè¯•ï¼Œè‹¥éœ€è¦è¯·è‡ªè¡Œå¼€å¯ã€‚
 log-level: silent
 external-controller: 127.0.0.1:9090
 
@@ -25,7 +25,7 @@ dns:
     - 'www.msftncsi.com'
     - 'www.msftconnecttest.com'
   nameserver:
-    - 223.5.5.5 # °¢ÀïDNS
+    - 223.5.5.5 # é˜¿é‡ŒDNS
     - tls://dns.rubyfish.cn:853
   fallback:
     - tls://1.0.0.1:853
@@ -43,5 +43,8 @@ proxy-groups:
 rules:
  - GEOIP,CN,DIRECT
  - MATCH,FUCKALL
+
+
+
 
 
