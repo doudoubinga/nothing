@@ -44,4 +44,3 @@ rules:
  - GEOIP,CN,DIRECT
  - MATCH,FUCKALL
 
-
