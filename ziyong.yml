@@ -18,18 +18,15 @@ dns:
     - www.msftncsi.com
     - www.msftconnecttest.com
   nameserver:
-    - 203.80.96.10
-    - 202.45.84.58
-    - 202.45.84.59
-    - 202.14.67.4
-    - 202.14.67.14
-  fallback:
-    - tls://1.0.0.1:853
-    - tls://dns.google:853
-  fallback-filter:
-    geoip: true
-    ipcidr:
-      - 240.0.0.0/4
+    - 223.5.5.5 # 阿里DNS	    - 1.1.1.1
+    - tls://dns.rubyfish.cn:853	#    - 223.5.5.5 # 阿里DNS
+  fallback:	#    - tls://dns.rubyfish.cn:853
+    - tls://1.0.0.1:853	#  fallback:
+    - tls://dns.google:853	#    - tls://1.0.0.1:853
+  fallback-filter:	#    - tls://dns.google:853
+    geoip: true	#  fallback-filter:
+    ipcidr:	#    geoip: true
+    - 240.0.0.0/4
 
 proxies:
 
